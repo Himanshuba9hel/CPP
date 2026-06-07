@@ -1,16 +1,15 @@
 cmake_minimum_required(VERSION 3.16)
 
-project(01_OOPs LANGUAGES CXX)
+project(Interface LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-add_executable(01_OOPs main.cpp)
+add_executable(Interface main.cpp)
 
 include(GNUInstallDirs)
-install(TARGETS 01_OOPs
+install(TARGETS Interface
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
-add_subdirectory(Interface)
